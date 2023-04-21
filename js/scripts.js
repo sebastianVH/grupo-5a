@@ -123,7 +123,88 @@ document.write(`<h1>${parseFloat(decimal)}</h1>`) //* Convertimos un string a de
 === igual en tipo y valor
 !== distinto en triple y valor
 
-los resultados siempre seran VERDADERO O FALSO
+?los resultados siempre seran VERDADERO O FALSO
 */
 
+//? CONDICIONALES:
 
+//* podremos entrar si nuestra edad es mayor o igual a 18.
+
+let edad = 18;
+//* if nos permite evaluar la condicion, y en caso que no se cumpla, se ejecuta la sentencia else
+
+
+if (edad >= 18) {
+    console.log("Usted puede ingresar.");
+} else {
+    console.log("Usted no puede ingresar al establecimiento");
+}
+
+//? Pedimos al usuario que nos indique su nombre_user y password. Si ambos son correctos, puede ingresar
+
+let nombre_user = "seba_global_09";
+let password = 155896;
+
+let nombre_user_db = "seba_global_09"
+let password_db = 155896
+
+//? conectores logicos
+
+/*
+AND: && -> nos dice que el bloque sera VERDADERO si todas sus condiciones son VERDADERAS
+OR: || -> nos dice que el bloque sera VERDADERO si POR LO MENOS una condicion es VERDADERA
+NOT: ! -> negara el resultado de lo devuelto: si es true, lo hara false y viceversa
+*/
+
+if( nombre_user === nombre_user_db && password === password_db) {
+    console.log("Acceso concedido");
+} else {
+    console.log("Contraseña/usuario incorrectos");
+}
+
+//? en un banco, tanto el gerente como el tesorero, tienen la llave de la caja fuerte. Para abrir la caja, solo se necesita que este presente uno de ellos. Si esta el gerente o el tesorero, podremos abrir la caja
+
+let gerente = true;
+let tesorero = true;
+
+if (gerente === true || tesorero === true)  { 
+    console.log("Se puede acceder a la caja fuerte");
+} else {
+    console.log("No se puede abrir");
+}
+
+//? En un edificio hay 3 depto ocupados y 3 deshabitados. en el 1 vive seba, en el 2 roxy, 3 vive pablo. Con el portero podemos llamr a cualquier de esos deptos. El resto de deptos, cuando llamemos al portero, nos dira "comunicando con porteria"
+
+let depto = 1;
+
+if (depto === 1) {
+    console.log("LLamando a Seba");
+} else if (depto === 2) {
+    console.log("Llamando a Roxy");
+} else if (depto === 3 ) {
+    console.log("llamando a Pablo");
+} else {
+    console.log("Llamando a Porteria");
+}
+
+//? operador NOT : !
+
+
+
+//? bomba: se pone un numero del 1 al 9. si apreta el 5 , explota todo
+
+let numero = 5
+
+if (numero !== 5) {
+    console.log("No Explota");
+} else {
+    console.log("Explota")
+};
+
+//? si no tiene datos (esto puede ser false, 0, "", null, undefined) se ejecuta el IF:
+let usuario = "";
+console.log(usuario)
+
+if (!usuario) { 
+    console.log("usuario vacio");
+}
