@@ -14,7 +14,7 @@ while (*expresiones*) {
 }
 
 */
-
+/*
 //TODO: vamos a hacer un contador del 1 al 10. Eso lo escribiremos en la consola
 
 //! SIEMPRE DEBEMOS DEFINIR ANTES LAS VARIABLES QUE USAREMOS DENTRO DE NUESTRO BUCLE
@@ -60,5 +60,17 @@ while(numero_secreto != numero_arriesgado) {
     else if(numero_arriesgado < numero_secreto) {alert("Su numero es mas chico que el secreto!!")}
     else alert("Acertaste!!! el numero secreto era"+ numero_secreto)
 }
+*/
 
- 
+//? break: es una expresion (palabra reservada) que nos dice que un bucle va a finalizar de manera INMEDIATA, sin importar si se cumple la condicion
+
+let contador = 0
+
+while(contador < 10){
+    console.log(contador);
+    if (contador === 1){
+        break //!  VA A FINALIZAR OBLIGADAMENTE EL BUCLE!!! POR MAS QUE LA CONDICION NO SE DE
+    }
+    contador++
+}
+
