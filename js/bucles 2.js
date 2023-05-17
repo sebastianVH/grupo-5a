@@ -49,7 +49,7 @@ for (let propiedad in persona ){
     console.log(persona[propiedad]); 
 }
 
-//? for OF: nos permite recorrer **********, no funciona para recorrer OBJETO
+//? for OF: nos permite recorrer arrays,string, no funciona para recorrer OBJETO
 
 let array_nombres = ["Seba","Lore","Emi","Augusto","Florencia"] //Array
 let string = "Hola Mundo" //String
